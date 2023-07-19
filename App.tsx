@@ -8,7 +8,7 @@
 import React from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import { colors } from './src/global/styles';
-import SignInScreen from './src/screens/authScreens/SignInScreen';
+import SignInWelcomeScreen from './src/screens/authScreens/SignInWelcomeScreen';
 
 function App(): JSX.Element {
 
@@ -18,7 +18,7 @@ function App(): JSX.Element {
         barStyle="light-content"
         backgroundColor={colors.statusbar}
       />
-      <SignInScreen />
+      <SignInWelcomeScreen />
     </View>
   );
 }
