@@ -7,13 +7,13 @@ import { colors, parameters } from '../../global/styles';
 import { Icon, Button, SocialIcon } from 'react-native-elements';
 import Header from '../../components/Header';
 import * as Animatable from 'react-native-animatable';
-export default function SignInScreen() {
+export default function SignInScreen({navigation}: any) {
     const [passwordFocus, setPasswordFocus] = useState(false);
     const emailInput = useRef<any>(1);
     const passwordInput = useRef<any>(2);
     return (
         <View style={styles.container}>
-            <Header title="MY ACCOUNT" type="arrow-left" />
+            <Header title="MY ACCOUNT" type="arrow-left" navigation={navigation}/>
             <ScrollView>
                 <View style={{ marginLeft: 20, marginTop: 10 }}>
                     <Text style={styles.title}>Sign In</Text>

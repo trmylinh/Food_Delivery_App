@@ -6,7 +6,7 @@ import React from 'react';
 import { colors, parameters } from '../../global/styles';
 import { Icon, Button, SocialIcon } from 'react-native-elements';
 import Swiper from 'react-native-swiper';
-export default function SignInWelcomeScreen() {
+export default function SignInWelcomeScreen({navigation}: any) {
     return (
         <View style={{ flex: 1 }}>
             <View style={styles.headerView}>
@@ -52,6 +52,9 @@ export default function SignInWelcomeScreen() {
                         title="SIGN IN"
                         buttonStyle={styles.styledButton}
                         titleStyle={styles.buttonTitle}
+                        onPress={()=>{
+                            navigation.navigate('SignInScreen');
+                        }}
                     />
                 </View>
 

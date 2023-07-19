@@ -6,9 +6,9 @@
  */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {StyleSheet, View, StatusBar} from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
 import { colors } from './src/global/styles';
-import SignInWelcomeScreen from './src/screens/authScreens/SignInWelcomeScreen';
+import RootNavigator from './src/navigation/RootNavigator';
 
 function App(): JSX.Element {
 
@@ -18,7 +18,7 @@ function App(): JSX.Element {
         barStyle="light-content"
         backgroundColor={colors.statusbar}
       />
-      <SignInWelcomeScreen />
+      <RootNavigator />
     </View>
   );
 }
